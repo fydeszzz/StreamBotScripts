@@ -1,0 +1,78 @@
+{
+    "output_file": "settings.json",
+
+    "liveOnly": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Live Only Mode",
+        "tooltip": "True if you want it to only run when you are live",
+        "group" : "General"
+    },
+    "command": {
+        "type": "textbox",
+        "value": "!when",
+        "label": "Command",
+        "tooltip": "Name of the command",
+        "group": "General"
+    },
+    "permission": {
+        "type": "dropdown",
+        "value": "Everyone",
+        "items": ["Everyone","Regular","Subscriber","Moderator","Editor"],
+        "label": "Permission level",
+        "tooltip": "Set the permission level for the command",
+        "group": "General"
+    },
+	"volume": {
+        "type": "slider",
+        "value": 50.0,
+        "min": 1,
+        "max": 100,
+        "ticks": 1.0,
+        "label": "Volume",
+        "tooltip": "Set the volume power for the playing sounds.",
+        "group": "General"
+    },
+	"response1": {
+        "type": "textbox",
+        "value": "text",
+        "label": "8PM message",
+        "tooltip": "bot response",
+        "group": "General"
+    },
+	"response2": {
+        "type": "textbox",
+        "value": "text",
+        "label": "10PM message",
+        "tooltip": "bot response",
+        "group": "General"
+    },
+	"response3": {
+        "type": "textbox",
+        "value": "text",
+        "label": "11PM message",
+        "tooltip": "bot response",
+        "group": "General"
+    },
+	"response4": {
+        "type": "textbox",
+        "value": "text",
+        "label": "12PM message",
+        "tooltip": "bot response",
+        "group": "General"
+    },
+	"response5": {
+        "type": "textbox",
+        "value": "text",
+        "label": "6-7PM message",
+        "tooltip": "bot response",
+        "group": "General"
+    },
+	"response": {
+        "type": "textbox",
+        "value": "text",
+        "label": "nowmessage",
+        "tooltip": "bot response",
+        "group": "General"
+    },
+}
