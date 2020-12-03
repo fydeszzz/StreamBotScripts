@@ -1,0 +1,111 @@
+{
+    "output_file": "settings.json",
+
+    "liveOnly": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Live Only Mode",
+        "tooltip": "True if you want it to only run when you are live",
+        "group" : "General"
+	},
+	"command": {
+        "type": "textbox",
+        "value": "!calldragon",
+        "label": "Command",
+        "tooltip": "Name of command",
+        "group": "General"
+    },
+    "permission": {
+        "type": "dropdown",
+        "value": "Everyone",
+        "items": ["Everyone","Regular","Subscriber","Moderator","Editor"],
+        "label": "Permission level",
+        "tooltip": "Set the permission level for the command",
+        "group": "General"
+    },
+	"count":{
+		"type": "numberbox",
+		"value": 5,
+		"label": "count",
+		"tooltip": "requested times for calling dragon",
+		"group": "General"
+	},
+	"currency":{
+		"type": "numberbox",
+		"value": 10,
+		"label": "currency for prize",
+		"tooltip": "reward for participator(each)",
+		"group": "General"
+	},	
+	"usecooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Use Cooldown",
+        "tooltip": "True if you want to use cooldown",
+        "group" : "Cooldown"
+	},
+	"useusercooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Use User Cooldown",
+        "tooltip": "True if you want to use user cooldown",
+        "group" : "Cooldown"
+	},
+	"cooldown":{
+		"type": "numberbox",
+		"value": 7200,
+		"label": "cooldown",
+		"tooltip": "cooldown time(sec) for command",
+		"group": "Cooldown"
+	},
+	"cooldownmessage": {
+        "type": "textbox",
+        "value": "the $command is still on cooldown for $cd mins!",
+        "label": "cooldown message",
+        "tooltip": "cooldown message (you can use $cd as variable for cooldown time)",
+        "group": "Cooldown"
+    },
+	"usercooldown":{
+		"type": "numberbox",
+		"value": 6000,
+		"label": "usercooldown",
+		"tooltip": "cooldown time(sec) for user",
+		"group": "Cooldown"
+	},
+	"usercooldownmessage": {
+        "type": "textbox",
+        "value": "$username has already used the $command!",
+        "label": "user cooldown message",
+        "tooltip": "user cooldown message(you can use $username as user)",
+        "group": "Cooldown"
+	},
+	"joinmessage": {
+        "type": "textbox",
+        "value": "$username has successfully called dragon! (progress: $progress)",
+        "label": "Join Message",
+        "tooltip": "notify message for participator (you can use $progress as variable for checking counts)",
+        "group": "Response"
+    },
+	"rewardmessage": {
+        "type": "textbox",
+        "value": "Congrats for following users: $rewardlist",
+        "label": "Reward Message",
+        "tooltip": "notify message for getting reward (you can use $rewardlist as variable for winners)",
+        "group": "Response"
+	},
+	"restartmessage": {
+        "type": "textbox",
+        "value": "Dragon is coming! Use $connand to call dragon.",
+        "label": "Restart Message",
+        "tooltip": "notify message for next dragon (you can use $command as command)",
+        "group": "Response"
+	},
+	"openReadMe": {
+        "type": "button",
+        "label": "Open 'Readme Me' file",
+        "tooltip": "Opens the 'Readme.txt' for this script.",
+        "function": "OpenReadMe",
+        "wsevent": "",
+        "group": ""
+    }
+}
