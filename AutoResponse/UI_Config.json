@@ -1,0 +1,42 @@
+{
+    "output_file": "settings.json",
+
+    "liveOnly": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Live Only Mode",
+        "tooltip": "True if you want it to only run when you are live",
+        "group" : "General"
+    },
+    "permission": {
+        "type": "dropdown",
+        "value": "Everyone",
+        "items": ["Everyone","Regular","Subscriber","Moderator","Editor"],
+        "label": "Permission level",
+        "tooltip": "Set the permission level for the command",
+        "group": "General"
+    },
+    "emoteList": {
+        "type": "textbox",
+        "value": "DxCat, CoolCat, InuyoFace, GlitchCat, StinkyCheese, BloodTrail",
+        "label": "Emotes",
+        "tooltip": "Use Comma as seperator",
+        "group": "General"
+    },
+    "openkeywordList": {
+        "type": "button",
+        "label": "Open 'keywordlist'",
+        "tooltip": "Opens the 'keywordlist.txt' file which you can update keywords.",
+        "function": "OpenKeywordList",
+        "wsevent": "",
+        "group": ""
+    },
+    "openreadme": {
+        "type": "button",
+        "label": "Open 'README'",
+        "tooltip": "Opens the 'README' file for this script.",
+        "function": "OpenReadMe",
+        "wsevent": "",
+        "group": ""
+    }
+}
